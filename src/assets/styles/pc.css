@@ -1,0 +1,111 @@
+/*-------------------------------public---------------------------------------*/
+html {
+  font-size: 75px;
+}
+
+html,
+body {
+  /* -webkit-overflow-scrolling:touch;!*流畅滚动,ios7下会有滑一下滑不动的情况，所以需要写上*!*/
+  position: relative;
+  /*直接子级如果是绝对定位有运动到屏幕外的话，会出现留白*/
+  height: 100%;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/** { touch-action: none; }*/
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+label,
+input,
+ol,
+a,
+textarea {
+  padding: 0;
+  margin: 0;
+  /*line-height: 142.8%;*/
+  font-weight: normal;
+  font-size: 0.44rem;
+  color: black;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Microsoft YaHei", "Microsoft YaHei UI", "Droid Sans", "Droid Sans Fallback", "Helvetica Neue", "Helvetica", "STHeiTi", "sans-serif";
+  font-weight: 400;
+  background-color: #fff;
+  /* overflow-scrolling: touch;
+  overflow:-Scroll;
+  overflow-x:hidden;*/
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+img,
+a,
+button {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
+}
+
+a:link,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+/*--------------------------*/
+.disBlock {
+  display: block;
+}
+
+.disNone {
+  display: none !important;
+}
+
+.disNoneImp {
+  display: none !important;
+}
+
+.disHidden {
+  visibility: hidden;
+}
+
+.overHiden {
+  overflow: hidden;
+}
+
+.color_notice {
+  color: #c81c0f;
+}
